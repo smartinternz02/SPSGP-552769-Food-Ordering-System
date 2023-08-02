@@ -51,6 +51,10 @@
   padding: 100px 0;
 }
 
+h1{
+  align-content: center;
+}
+
 .contact h2 {
   font-size: 36px;
   margin-bottom: 40px;
@@ -68,3 +72,26 @@
   font-size: 16px;
   padding: 12px 32px;
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  color: black;
+  background-image: url("https://source.unsplash.com/random/1920x1080/?restaurants'");
+  background-size: cover;
+  background-position: center center;
+}
+ 
