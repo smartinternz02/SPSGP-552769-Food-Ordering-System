@@ -466,9 +466,9 @@ module.exports = Order;
 
 app.post('/orders', async (req, res) => {
   try {
-    const { user, address, phone, items } = req.body;
+    const { user, address, phone, items, paymentMethod } = req.body;
 
-    const newOrder = new Order({ user, address, phone, items });
+    const newOrder = new Order({ user, address, phone, items, paymentMethod });
 
     const createdOrder = await newOrder.save();
 
